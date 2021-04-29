@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Fruits;
+use App\fruits as Fruits;
 
 
 class FruitsSeeder extends Seeder
