@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Meats;
+use App\meats as Meats;
 
 class MeatsSeeder extends Seeder
 {
