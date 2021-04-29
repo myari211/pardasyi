@@ -1,0 +1,52 @@
+.navbar {
+    background-color: #0c837d;
+    color:white;
+}
+
+.top-nav-collapse {
+    background-color: #0c837d;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: #0c837d;
+    }
+}
+
+.green-bg{
+    background-color:#0c837d;
+}
+
+.weight{
+    font-weight: 800;
+}
+
+.green-color{
+    background-color:#00acc1;
+    color:white;
+}
+.green-color:hover{
+    color:white;
+}
+
+.green-color:active{
+    color:white;
+}
+
+.text-green{
+    color:#0c837d;
+}
+
+html,
+body,
+.view {
+    height: 100%;
+}
+
+.wow {
+    visibility: hidden;
+}
+
+.sea{
+    background-color: #99daec;
+}
