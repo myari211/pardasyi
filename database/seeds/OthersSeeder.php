@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Others;
+use App\others as Others;
 
 class OthersSeeder extends Seeder
 {
