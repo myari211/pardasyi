@@ -26,4 +26,8 @@ class GuestController extends Controller
     public function product(){
         return view('guest.product');
     }
+
+    public function maps(){
+        return view('guest.maps');
+    }
 }

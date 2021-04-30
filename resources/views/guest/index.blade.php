@@ -7,7 +7,7 @@
           <div class="row d-flex justify-content-md-start justify-content-center mt-md-0 mt-4">
             <p class="h2 text-green">PT. Assyifa Berkah Abadi</p>
           </div>
-          <div class="row d-flex justify-content-md-start justify-content-center text-white">
+          <div class="row d-flex justify-content-md-start justify-content-center text-danger">
             <h4>Export,Import, And Trading</h4>
           </div>
           <div class="row">
@@ -21,10 +21,10 @@
           </div>
           <div class="row mt-4">
             <div class="col-md-8 d-flex justify-content-center pl-md-0">
-              <a href="about.html">
+              <a href="/about">
                 <button type="button" class="btn aqua-gradient animated bounce infinite slower rounded">Get Started</button>
               </a>
-              <a href="maps.html">
+              <a href="/maps">
                 <button type="button" class="btn purple-gradient animated bounce infinite slow rounded">Our Location</button>
               </a>
             </div>
