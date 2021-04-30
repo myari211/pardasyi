@@ -39,7 +39,7 @@
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark green-color scrolling-navbar">
     <a class="navbar-brand" href="#">
       <img src="{{ asset('image/asyifa.png') }}" style="width:50px; margin-right:20px">
-      <strong style="margin-right:50px">PT. Assyifa Berkah Abadi</strong>
+      <strong style="margin-right:50px">PT. ASSYIFA BERKAH ABADI</strong>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -101,7 +101,7 @@
         </div>
         <div class="row mt-4">
           <div class="col-lg-12 d-flex justify-content-center">
-            <small class="weight">&copy; 2021 PT. Assyifa Berkah Abadi</small>
+            <small class="weight">&copy; 2021 PT. ASSYIFA BERKAH ABADI</small>
           </div>
         </div>
         <div class="row">
