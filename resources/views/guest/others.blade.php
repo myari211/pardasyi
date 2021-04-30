@@ -43,7 +43,7 @@
                     <div class="col-lg-8">
                         <div class="row">
                             <div class="col-lg-12">
-                                <img src="{{ asset('image/others/'.$data->image) }}" style="width:100%">
+                                <img src="{{ asset('image/Others/'.$data->image) }}" style="width:100%">
                             </div>
                         </div>
                     </div>
