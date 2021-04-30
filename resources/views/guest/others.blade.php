@@ -16,11 +16,11 @@
                                 <h4 class="text-center weight text-green">{{ $data->name_product }}</h4>
                             </div>
                         </div>
-                        <div class="row mt-4">
+                        {{-- <div class="row mt-4">
                             <div class="col-lg-12">
                                 <span class="text-center">{{ Str::limit($data->description, '150') }}</span>
                             </div>
-                        </div>
+                        </div> --}}
                         <div class="row mt-4 d-flex justify-content-end">
                             <div class="col-lg-6 d-flex justify-content-end">
                                 <button type="button" class="btn btn-md green-bg text-white rounded" data-toggle="modal" data-target="#others{{ $data->id }}">More</button>

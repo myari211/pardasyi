@@ -124,7 +124,7 @@
                 <div class="card-body">
                     <div class="row">
                         <div class="col-lg-12">
-                            <img src="{{ asset('image/fish/4.jpg') }}" style="width:100%; height:200px;" class="border">
+                            <img src="{{ asset('image/fish/1.jpg') }}" style="width:100%; height:200px;" class="border">
                         </div>
                     </div>
                     <div class="row mt-4">
