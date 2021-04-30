@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Fish;
+use App\fish as Fish;
 
 class FishSeeder extends Seeder
 {
