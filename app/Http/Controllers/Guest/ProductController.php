@@ -43,6 +43,14 @@ class ProductController extends Controller
         return view('guest.fruits', compact('fruits'));
     }
 
+    public function fish(){
+
+        $fish = DB::table('fish')->get();
+
+        return view('guest.fish', compact('fish'));
+    }
+
+
     public function others(){
         
         $others = DB::table('others')->get();

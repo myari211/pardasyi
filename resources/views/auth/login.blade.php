@@ -112,31 +112,40 @@
                                 <h4>PT. Assyifa Berkah Abadi</h4>
                             </div>
                         </div>
-                        <div class="row mt-5 d-flex justify-content-center">
-                            <div class="col-lg-11">
-                                <div class="md-form md-outline input-with-pre-icon mb-0">
-                                    <i class="fas fa-envelope input-prefix"></i>
-                                    <input type="email" name="email" class="form-control" id="email">
-                                    <label for="email">Email</label>
+                        <form method="post" action="{{ route('login') }}">
+                            @csrf
+                            <div class="row mt-5 d-flex justify-content-center">
+                                <div class="col-lg-11">
+                                    <div class="md-form md-outline input-with-pre-icon mb-0">
+                                        <i class="fas fa-envelope input-prefix"></i>
+                                        <input type="email" name="email" class="form-control @error('password') is-invalid @enderror" id="email">
+                                        <label for="email">Email</label>
+                                    </div>
+
+                                    @error('email')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
                                 </div>
                             </div>
-                        </div>
-                        <div class="row d-flex justify-content-center">
-                            <div class="col-lg-11">
-                                <div class="md-form md-outline input-with-pre-icon mt-0">
-                                    <i class="fas fa-lock input-prefix"></i>
-                                    <input type="password" name="password" class="form-control" id="password">
-                                    <label for="password">Password</label>
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-lg-11">
+                                    <div class="md-form md-outline input-with-pre-icon mt-0">
+                                        <i class="fas fa-lock input-prefix"></i>
+                                        <input type="password" name="password" class="form-control" id="password">
+                                        <label for="password">Password</label>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row d-flex justify-content-center mt-5">
-                            <div class="col-lg-11">
-                                <button type="button" class="btn btn-md btn-block green-bg text-white">
-                                    Sign In
-                                </button>
+                            <div class="row d-flex justify-content-center mt-5">
+                                <div class="col-lg-11">
+                                    <button type="submit" class="btn btn-md btn-block green-bg text-white">
+                                        Sign In
+                                    </button>
+                                </div>
                             </div>
-                        </div>
+                        </form>
                         <div class="row mt-5 d-flex justify-content-center">
                             <div class="col-lg-11 d-flex justify-content-center">
                                 <small class="text-muted">PT. Assyifa Berkah Abadi 2021 &copy; All rights reserved</small>

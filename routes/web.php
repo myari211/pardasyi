@@ -32,6 +32,7 @@ Route::get('/product/rice', 'Guest\ProductController@rice')->name('rice');
 Route::get('/product/herbs', 'Guest\ProductController@herbs')->name('herbs');
 Route::get('/product/meats', 'Guest\ProductController@meats')->name('meats');
 Route::get('/product/fruits', 'Guest\ProductController@fruits')->name('fruits');
+Route::get('/product/fish', 'Guest\ProductController@fish')->name('fish');
 Route::get('/product/others', 'Guest\ProductController@others')->name('others');
 
 Route::get('/home', 'HomeController@index')->name('home');
