@@ -18,6 +18,7 @@ class CreateHerbsTable extends Migration
             $table->string('image');
             $table->text('description');
             $table->string('name_product');
+            $table->unsignedBigInteger('price');
             $table->timestamps();
         });
     }
