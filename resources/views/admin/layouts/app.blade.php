@@ -20,6 +20,20 @@
         transform: translate(-50%,-50%);
         font: 14px arial;
       }
+
+      .hover{
+        padding:10px;
+        color:#0c837D;
+      }
+
+      .hover:hover{
+        background-color:#0C837D;
+        color:white;
+      }
+
+      .font-color{
+        color:#0C837D;
+      }
       </style>
 </head>
 <body class="sea">
@@ -54,16 +68,32 @@
           </div>
           <div class="row" style="margin-top:200px;">
             <div class="col-lg-12">
-              <a href="product" class="weight d-flex justify-content-between" style="color:black !important;">
+              <a href="/home" class="weight d-flex justify-content-between hover align-items-center">
                 Coffee
-                <i class="fas fa-bookmark"></i>
+                <i class="far fa-circle"></i>
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <a href="/admin/rice" class="weight d-flex justify-content-between hover align-items-center">
+                Rice
+                <i class="far fa-circle"></i>
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <a href="/admin/fish" class="weight d-flex justify-content-between hover align-items-center">
+                Fish
+                <i class="far fa-circle"></i>
               </a>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="col-lg-7">
+    <div class="col-lg-9">
         @yield('content')   
     </div>
 </div>

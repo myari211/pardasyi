@@ -36,5 +36,9 @@ Route::get('/product/fruits', 'Guest\ProductController@fruits')->name('fruits');
 Route::get('/product/fish', 'Guest\ProductController@fish')->name('fish');
 Route::get('/product/others', 'Guest\ProductController@others')->name('others');
 
+//coffee
 Route::get('/home', 'HomeController@index')->name('home');
 Route::post('/coffee/post', 'HomeController@coffe_post')->name('coffe.post');
+
+Route::get('/admin/rice', 'HomeController@rice')->name('rice');
+Route::post('/admin/rice', 'HomeController@createRice')->name('admin.rice.post');

@@ -61,4 +61,48 @@ class HomeController extends Controller
 
         return redirect()->back();
     }
+
+    public function rice(){
+        return view('admin.rice');
+    }
+
+    public function createRice(Request $request){
+        $validator = Validator::make($request->all(), [
+            "product_name" => ["required"],
+            "price" => ["required"],
+            "description" => ['required'],
+            "file" => ['required'],
+            "created_at" => Carbon::now(),
+            "updated_at" => Carbon::now(),
+        ]);
+
+        $this->validate([
+            "product_name" => ["required"],
+            "price" => ["required"],
+            "description" => ['required'],
+            "file" => ['required'],
+        ]);
+
+        // dd($request->all());
+        
+
+        $file = $request->file('file');
+        $fileName = time()."_".$file->getClientOriginalName();
+        $dir = "image/rice";
+        $file->move($dir, $fileName);
+
+
+        DB::table('rice')
+            ->insert([
+                "description" => $request->description,
+                "name_product" => $request->product_name,
+                "price" => $request->price,
+                "image" => $fileName,
+                "created_at" => Carbon::now(),
+                "updated_at" => Carbon::now(),
+            ]);
+
+            return redirect()->back();
+
+    }
 }
