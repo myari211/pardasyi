@@ -63,7 +63,14 @@ class HomeController extends Controller
     }
 
     public function rice(){
-        return view('admin.rice');
+
+        $rice = DB::table('rice')
+        ->get();
+
+        $riceCount = DB::table('rice')
+            ->count();
+
+        return view('admin.rice', compact('rice', 'riceCount'));
     }
 
     public function createRice(Request $request){
@@ -76,7 +83,7 @@ class HomeController extends Controller
             "updated_at" => Carbon::now(),
         ]);
 
-        $this->validate([
+        $this->validate($request, [
             "product_name" => ["required"],
             "price" => ["required"],
             "description" => ['required'],
@@ -104,5 +111,162 @@ class HomeController extends Controller
 
             return redirect()->back();
 
+    }
+
+
+    public function fish(){
+        $fish = DB::table('fish')
+            ->get();
+
+        return view('admin.fish', compact('fish'));
+    }
+
+    public function createFish(Request $request) {
+        $this->validate($request, [
+            "product_name" => ["required"],
+            "price" => ["required"],
+            "description" => ['required'],
+            "file" => ['required'],
+        ]);
+
+        // dd($request->all());
+        
+
+        $file = $request->file('file');
+        $fileName = time()."_".$file->getClientOriginalName();
+        $dir = "image/fish";
+        $file->move($dir, $fileName);
+
+
+        DB::table('fish')
+            ->insert([
+                "description" => $request->description,
+                "name_product" => $request->product_name,
+                "price" => $request->price,
+                "image" => $fileName,
+                "created_at" => Carbon::now(),
+                "updated_at" => Carbon::now(),
+            ]);
+
+            return redirect()->back();
+
+    }
+
+    public function herbs(){
+
+        $herbs = DB::table('herbs')
+            ->get();
+
+        return view('admin.herbs', compact('herbs'));
+    }
+
+    public function createHerbs(Request $request){
+        $this->validate($request, [
+            "product_name" => ["required"],
+            "price" => ["required"],
+            "description" => ['required'],
+            "file" => ['required'],
+        ]);
+
+        // dd($request->all());
+        
+
+        $file = $request->file('file');
+        $fileName = time()."_".$file->getClientOriginalName();
+        $dir = "image/herbs";
+        $file->move($dir, $fileName);
+
+
+        DB::table('herbs')
+            ->insert([
+                "description" => $request->description,
+                "name_product" => $request->product_name,
+                "price" => $request->price,
+                "image" => $fileName,
+                "created_at" => Carbon::now(),
+                "updated_at" => Carbon::now(),
+            ]);
+
+            return redirect()->back();
+        
+    }
+
+    public function fruits(){
+
+        $fruits = DB::table('fruits')
+            ->get();
+
+        return view('admin.fruits', compact('fruits'));
+    }
+
+    public function createFruits(Request $request){
+        $this->validate($request, [
+            "product_name" => ["required"],
+            "price" => ["required"],
+            "description" => ['required'],
+            "file" => ['required'],
+        ]);
+
+        // dd($request->all());
+        
+
+        $file = $request->file('file');
+        $fileName = time()."_".$file->getClientOriginalName();
+        $dir = "image/fruit";
+        $file->move($dir, $fileName);
+
+
+        DB::table('fruits')
+            ->insert([
+                "description" => $request->description,
+                "name_product" => $request->product_name,
+                "price" => $request->price,
+                "image" => $fileName,
+                "created_at" => Carbon::now(),
+                "updated_at" => Carbon::now(),
+            ]);
+
+            return redirect()->back();
+
+        
+    }
+
+    public function meats(){
+
+        $meats = DB::table('meats')
+            ->get();
+
+        return view('admin.meats', compact('meats'));
+    }
+
+
+    public function createMeats(Request $request){
+        $this->validate($request, [
+            "product_name" => ["required"],
+            "price" => ["required"],
+            "description" => ['required'],
+            "file" => ['required'],
+        ]);
+
+        // dd($request->all());
+        
+
+        $file = $request->file('file');
+        $fileName = time()."_".$file->getClientOriginalName();
+        $dir = "image/Meats";
+        $file->move($dir, $fileName);
+
+
+        DB::table('meats')
+            ->insert([
+                "description" => $request->description,
+                "name_product" => $request->product_name,
+                "price" => $request->price,
+                "image" => $fileName,
+                "created_at" => Carbon::now(),
+                "updated_at" => Carbon::now(),
+            ]);
+
+            return redirect()->back();
     }
 }

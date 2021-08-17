@@ -40,5 +40,23 @@ Route::get('/product/others', 'Guest\ProductController@others')->name('others');
 Route::get('/home', 'HomeController@index')->name('home');
 Route::post('/coffee/post', 'HomeController@coffe_post')->name('coffe.post');
 
+
+//rice
 Route::get('/admin/rice', 'HomeController@rice')->name('rice');
 Route::post('/admin/rice', 'HomeController@createRice')->name('admin.rice.post');
+
+//fish
+Route::get('/admin/fish', 'HomeController@fish')->name('fish');
+Route::post('/admin/fish', 'HomeController@createFish')->name('create.fish');
+
+//herbs
+Route::get('/admin/herbs', 'HomeController@herbs')->name('herbs');
+Route::post('/admin/herbs', 'HomeController@createHerbs')->name('create.herbs');
+
+//fruit
+Route::get('/admin/fruits', 'HomeController@fruits')->name('fruits');
+Route::post('/admin/fruits', 'HomeController@createFruits')->name('create.fruits');
+
+//meats
+Route::get('/admin/meats', 'HomeController@meats')->name('meats');
+Route::post('/admin/meats', 'HomeController@createMeats')->name('create.meats');

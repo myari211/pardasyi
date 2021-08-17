@@ -90,6 +90,30 @@
               </a>
             </div>
           </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <a href="/admin/herbs" class="weight d-flex justify-content-between hover align-items-center">
+                Herbs
+                <i class="far fa-circle"></i>
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <a href="/admin/fruits" class="weight d-flex justify-content-between hover align-items-center">
+                Fruits
+                <i class="far fa-circle"></i>
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <a href="/admin/meats" class="weight d-flex justify-content-between hover align-items-center">
+                Meats
+                <i class="far fa-circle"></i>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>

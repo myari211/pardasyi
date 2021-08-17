@@ -13,7 +13,7 @@
                             </span>
                         </div>
                     </div>
-                    <form method="post" action="/admin/rice" enctype="multipart/form-data">
+                    <form method="post" action="{{ route('create.meats') }}" enctype="multipart/form-data">
                         @csrf
                         <div class="row">
                             <div class="col-lg-6">
@@ -66,13 +66,13 @@
                         </div>
                     </div>
                     <div class="row mt-3">
-                        @foreach($rice as $data)
+                        @foreach($meats as $data)
                             <div class="col-lg-4">
                                 <div class="card rounded-0 bordered">
                                     <div class="card-body">
                                         <div class="row">
                                             <div class="col-lg-12">
-                                                <img src="{{ asset('image/rice/'.$data->image) }}">
+                                                <img src="{{ asset('image/Meats/'.$data->image) }}">
                                             </div>
                                         </div>
                                         <div class="row mt-4">
