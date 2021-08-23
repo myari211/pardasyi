@@ -62,6 +62,49 @@ class HomeController extends Controller
         return redirect()->back();
     }
 
+    public function coffe_update($id, Request $request){
+
+        if($request->hasFile('file')) {
+            $file = $request->file('file');
+            $fileName = time()."_".$file->getClientOriginalName();
+            $directory = "content";
+
+            DB::table('coffees')
+            ->where('id', $id)
+            ->update([
+                "name_product" => $request->product_name,
+                "price" => $request->price,
+                "image" => $fileName,
+                "description" => $request->description,
+                "created_at" => Carbon::now(),
+                "updated_at" => Carbon::now()
+            ]);
+
+            return redirect()->back();
+        }
+
+        DB::table('coffees')
+            ->where('id', $id)
+            ->update([
+                "name_product" => $request->product_name,
+                "price" => $request->price,
+                "description" => $request->description,
+                "created_at" => Carbon::now(),
+                "updated_at" => Carbon::now()
+            ]);
+
+            return redirect()->back();
+    }
+
+    public function coffe_delete($id){
+        DB::table('coffees')
+            ->where('id', $id)
+            ->delete();
+
+        return redirect()->back();
+    }
+
+
     public function rice(){
 
         $rice = DB::table('rice')
@@ -113,6 +156,47 @@ class HomeController extends Controller
 
     }
 
+    public function updateRice(Request $request, $id) {
+        if($request->hasFile('file')){
+            $file = $request->file('file');
+            $fileName = tim()."_".$file->getClientOriginalName();
+            $dir = "image/rice";
+            $file->move($dir, $fileName);
+        
+            DB::table('rice')
+            ->where('id', $id)
+            ->update([
+                "description" => $request->description,
+                "name_product" => $request->product_name,
+                "price" => $request->price,
+                "image" => $request->image,
+                "created_at" => Carbon::now(),
+                "updated_at" => Carbon::now()
+            ]);
+
+            return redirect()->back();
+        }
+
+        DB::table('rice')
+            ->update([
+                "description" => $request->description,
+                "name_product" => $request->product_name,
+                "price" => $request->price,
+                "created_at" => Carbon::now(),
+                "updated_at" => Carbon::now(),
+            ]);
+
+            return redirect()->back();
+    }
+
+    public function deleteRice($id){
+        DB::table('rice')
+            ->where('id', $id)
+            ->delete();
+
+        return redirect()->back();
+    }
+
 
     public function fish(){
         $fish = DB::table('fish')
@@ -152,6 +236,47 @@ class HomeController extends Controller
 
     }
 
+    public function updateFish($id, Request $request){
+        if($request->hasFile('file')) {
+            $file = $request->file('file');
+            $fileName = time()."_".$file->getClientOriginalName();
+            $dir = "image/fish";
+            $file->move($dir, $fileName);
+
+            DB::table('fish')
+                ->update([
+                    "description" => $request->description,
+                    "name_product" => $request->product_name,
+                    "price" => $request->price,
+                    "image" => $fileName,
+                    "created_at" => Carbon::now(),
+                    "updated_at" => Carbon::now(),
+                ]);
+
+                return redirect()->back();
+        }
+
+        DB::table('fish')
+            ->where('id', $id)
+            ->update([
+                "description" => $request->description,
+                "name_product" => $request->product_name,
+                "price" => $request->price,
+                "created_at" => Carbon::now(),
+                "updated_at" => Carbon::now(),
+            ]);
+
+            return redirect()->back();
+    }
+
+    public function deleteFish($id){
+        DB::table('fish')
+            ->where('id', $id)
+            ->delete();
+
+        return redirect()->back();
+    }
+
     public function herbs(){
 
         $herbs = DB::table('herbs')
@@ -189,6 +314,49 @@ class HomeController extends Controller
 
             return redirect()->back();
         
+    }
+
+    public function deleteHerbs($id){
+        DB::table('herbs')
+            ->where('id', $id)
+            ->delete();
+
+            return redirect()->back();
+    }
+
+
+    public function updateHerbs($id, Request $request){
+        if($request->hasFile('file')) {
+            $file = $request->file('file');
+            $fileName = time()."_".$file->getClientOriginalName();
+            $dir = "image/herbs";
+            $file->move($dir, $fileName);
+
+            DB::table('herbs')
+                ->where('id', $id)
+                ->update([
+                    "description" => $request->description,
+                    "name_product" => $request->product_name,
+                    "image" => $fileName,
+                    "price" => $request->price,
+                    "created_at" => Carbon::now(),
+                    "updated_at" => Carbon::now()
+                ]);
+
+                return redirect()->back();
+        }
+
+        DB::table('herbs')
+            ->where('id', $id)
+            ->update([
+                "description" => $request->description,
+                "name_product" => $request->product_name,
+                "price" => $request->price,
+                "created_at" => Carbon::now(),
+                "updated_at" => Carbon::now()
+            ]);
+
+            return redirect()->back();
     }
 
     public function fruits(){
@@ -231,6 +399,48 @@ class HomeController extends Controller
         
     }
 
+    public function editFruits($id, Request $request){
+        if($request->hasFile('file')) {
+            $file = $request->file('file');
+            $fileName = time()."_".$file->getClientOriginalName();
+            $dir = "image/fruits";
+            $file->move($dir, $fileName);
+
+            DB::table('fruits')
+                ->where('id', $id)
+                ->update([
+                    "description" => $request->description,
+                    "name_product" => $request->product_name,
+                    "image" => $fileName,
+                    "price" => $request->price,
+                    "created_at" => Carbon::now(),
+                    "updated_at" => Carbon::now()
+                ]);
+
+                return redirect()->back();
+        }
+
+        DB::table('fruits')
+            ->where('id', $id)
+            ->update([
+                "description" => $request->description,
+                "name_product" => $request->product_name,
+                "price" => $request->price,
+                "created_at" => Carbon::now(),
+                "updated_at" => Carbon::now()
+            ]);
+
+            return redirect()->back();
+    }
+
+    public function deleteFruits($id){
+        DB::table('fruits')
+            ->where('id', $id)
+            ->delete();
+
+            return redirect()->back();
+    }
+
     public function meats(){
 
         $meats = DB::table('meats')
@@ -268,5 +478,48 @@ class HomeController extends Controller
             ]);
 
             return redirect()->back();
+    }
+
+    public function editMeats($id, Request $request){
+        if($request->hasFile('file')) {
+            $file = $request->file('file');
+            $fileName = time()."_".$file->getClientOriginalName();
+            $dir = "image/meats";
+            $file->move($dir, $fileName);
+
+            DB::table('meats')
+                ->where('id', $id)
+                ->update([
+                    "description" => $request->description,
+                    "name_product" => $request->product_name,
+                    "image" => $fileName,
+                    "price" => $request->price,
+                    "created_at" => Carbon::now(),
+                    "updated_at" => Carbon::now()
+                ]);
+
+                return redirect()->back();
+        }
+
+        DB::table('meats')
+            ->where('id', $id)
+            ->update([
+                "description" => $request->description,
+                "name_product" => $request->product_name,
+                "price" => $request->price,
+                "created_at" => Carbon::now(),
+                "updated_at" => Carbon::now()
+            ]);
+
+            return redirect()->back();
+    }
+
+    public function deleteMeats($id){
+        DB::table('meats')
+            ->where('id', $id)
+            ->delete();
+
+
+        return redirect()->back();
     }
 }

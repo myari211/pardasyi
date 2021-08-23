@@ -39,24 +39,35 @@ Route::get('/product/others', 'Guest\ProductController@others')->name('others');
 //coffee
 Route::get('/home', 'HomeController@index')->name('home');
 Route::post('/coffee/post', 'HomeController@coffe_post')->name('coffe.post');
-
+Route::post('/coffee/update/{id}', 'HomeController@coffe_update')->name('coffe.update');
+Route::post('/coffee/delete/{id}', 'HomeController@coffe_delete')->name('coffe.delete');
 
 //rice
 Route::get('/admin/rice', 'HomeController@rice')->name('rice');
 Route::post('/admin/rice', 'HomeController@createRice')->name('admin.rice.post');
+Route::post('/admin/rice/update/{id}', 'HomeController@updateRice')->name('admin.rice.update');
+Route::post('/admin/delete/rice/{id}', 'HomeController@deleteRice')->name('admin.rice.delete');
 
 //fish
 Route::get('/admin/fish', 'HomeController@fish')->name('fish');
 Route::post('/admin/fish', 'HomeController@createFish')->name('create.fish');
+Route::post('/admin/edit/fish/{id}', 'HomeController@updateFish')->name('admin.fish.update');
+Route::post('/admin/fish/delete/{id}', 'HomeController@deleteFish')->name('admin.fish.delete');
 
 //herbs
 Route::get('/admin/herbs', 'HomeController@herbs')->name('herbs');
 Route::post('/admin/herbs', 'HomeController@createHerbs')->name('create.herbs');
+Route::post('/admin/herbs/update/{id}', 'HomeController@updateHerbs')->name('update.herbs');
+Route::post('/admin/herbs/delete/{id}', 'HomeCOntroller@deleteHerbs')->name('delete.herbs');
 
 //fruit
 Route::get('/admin/fruits', 'HomeController@fruits')->name('fruits');
 Route::post('/admin/fruits', 'HomeController@createFruits')->name('create.fruits');
+Route::post('/admin/edit/fruits/{id}', 'HomeController@editFruits')->name('edit.fruits');
+Route::post('/admin/delete/fruits/{id}', 'HomeController@deleteFruits')->name('delete.fruits');
 
 //meats
 Route::get('/admin/meats', 'HomeController@meats')->name('meats');
 Route::post('/admin/meats', 'HomeController@createMeats')->name('create.meats');
+Route::post('/admin/edit/meats/{id}', 'HomeController@editMeats')->name('edit.meats');
+Route::post('/admin/delete/meats/{id}', 'HomeController@deleteMeats')->name('delete.meats');
