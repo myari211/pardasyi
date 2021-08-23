@@ -34,7 +34,7 @@
                             <div class="col-lg-12 d-flex justify-content-between align-items-end">
                                 <div>
                                     <small class="text-muted">Price</small><br />
-                                    <span class="text-green" style="font-weight:400; font-size:25px;">Rp. {{ $data->price }}</span>
+                                    <span class="text-green" style="font-weight:400; font-size:25px;">$ {{ $data->price }}</span>
                                 </div>
                                 <div>
                                     <button type="button" class="btn btn-md green-bg text-white rounded-0" data-toggle="modal" data-target="#coffee{{ $data->id }}">Buy</button>
@@ -59,7 +59,7 @@
                     <div class="col-lg-8">
                         <div class="row">
                             <div class="col-lg-12">
-                                <img src="{{ asset('image/coffe/'.$data->image) }}" style="width:100%">
+                                <img src="{{ asset('content/'.$data->image) }}" class="w-100 h-100">
                             </div>
                         </div>
                     </div>
