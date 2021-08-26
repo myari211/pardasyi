@@ -58,7 +58,7 @@ Route::post('/admin/fish/delete/{id}', 'HomeController@deleteFish')->name('admin
 Route::get('/admin/herbs', 'HomeController@herbs')->name('herbs');
 Route::post('/admin/herbs', 'HomeController@createHerbs')->name('create.herbs');
 Route::post('/admin/herbs/update/{id}', 'HomeController@updateHerbs')->name('update.herbs');
-Route::post('/admin/herbs/delete/{id}', 'HomeCOntroller@deleteHerbs')->name('delete.herbs');
+Route::post('/admin/herbs/delete/{id}', 'HomeController@deleteHerbs')->name('delete.herbs');
 
 //fruit
 Route::get('/admin/fruits', 'HomeController@fruits')->name('fruits');
