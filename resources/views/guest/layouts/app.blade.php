@@ -44,13 +44,13 @@
             </a>
           </li>
           <li class="nav-item ml-4">
-            <a class="nav-link" href="/about">
+            <a class="nav-link" href="{{ url('/') }}/about">
               <i class="fas fa-building"></i>
               About
             </a>
           </li>
           <li class="nav-item ml-4">
-            <a class="nav-link" href="/product">
+            <a class="nav-link" href="{{ url('/') }}/product">
               <i class="fas fa-shopping-basket"></i>
               Product
             </a>
