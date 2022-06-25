@@ -11,7 +11,7 @@
         width: 100%;
         height: 100%;
         z-index: 9999;
-        background-color: #99daec;
+        /* background-color: #99daec; */
       }
       .preloader .loading {
         position: absolute;
@@ -22,7 +22,7 @@
       }
       </style>
 </head>
-<body class="sea">
+<body>
   <div class="preloader">
     <div class="loading">
       <div class="animated bounce infinite">
@@ -31,12 +31,47 @@
     </div>
   </div>
 
-  <html lang="en" class="full-height">
-
 <!--Main Navigation-->
-<header>
-
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark green-color scrolling-navbar">
+<div class="row">
+  <div class="col-lg-12">
+    <nav class="navbar navbar-expand-lg navbar-dark z-depth-0 fixed-top pt-4 pb-4">
+      <div class="collapse navbar-collapse" id="basicExampleNav">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">
+              <i class="fas fa-home"></i>
+              Home
+            </a>
+          </li>
+          <li class="nav-item ml-4">
+            <a class="nav-link" href="/about">
+              <i class="fas fa-building"></i>
+              About
+            </a>
+          </li>
+          <li class="nav-item ml-4">
+            <a class="nav-link" href="/product">
+              <i class="fas fa-shopping-basket"></i>
+              Product
+            </a>
+          </li>
+          <li class="nav-item ml-4">
+            <a class="nav-link" href="#">
+              <i class="fas fa-user"></i>
+              Directors
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-12">
+    @yield('content')
+  </div>
+</div>
+  {{-- <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
     <a class="navbar-brand" href="#">
       <img src="{{ asset('image/asyifa.png') }}" style="width:50px; margin-right:20px">
       <strong style="margin-right:50px">PT. ASSYIFA BERKAH ABADI</strong>
@@ -84,13 +119,8 @@
         </li>
       </ul>
     </div>
-  </nav>
-</header>
-
-@yield('content')
-
-
-<footer class="page-footer font-small green-bg pt-4 mt-5">
+  </nav> --}}
+<footer class="page-footer font-small bg-primary pt-4">
   <div class="container">
     <div class="row pb-4 pt-2">
       <div class="col-lg-3">
@@ -101,7 +131,7 @@
         </div>
         <div class="row mt-4">
           <div class="col-lg-12 d-flex justify-content-center">
-            <small class="weight">&copy; 2021 PT. ASSYIFA BERKAH ABADI</small>
+            <small class="weight">&copy; 2021 PT. PARDASYI CAHAYA ABADI</small>
           </div>
         </div>
         <div class="row">
