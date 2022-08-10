@@ -37,7 +37,7 @@
                                                 </div>
                                                 <div class="col-lg-8 d-flex justify-content-between align-items-center">
                                                     <span style="font-size: 30px;">Coffee</span>
-                                                    <button type="button" class='btn btn-md btn-primary p-3' onclick="location.href='/product/coffee';">
+                                                    <button type="button" class='btn btn-md btn-primary p-3' onclick="location.href='{{ url('/') }}/product/coffee';">
                                                         <i class="fas fa-arrow-right"></i>
                                                     </button>
                                                 </div>
@@ -54,7 +54,7 @@
                                                 </div>
                                                 <div class="col-lg-8 d-flex justify-content-between align-items-center">
                                                     <span style="font-size: 30px;">Rice</span>
-                                                    <button type="button" class="btn btn-md btn-primary p-3" onclick="location.href='/product/rice';">
+                                                    <button type="button" class="btn btn-md btn-primary p-3" onclick="location.href='{{ url('/') }}/product/rice';">
                                                         <i class='fas fa-arrow-right'></i>
                                                     </button>
                                                 </div>
@@ -73,7 +73,7 @@
                                                 </div>
                                                 <div class="col-lg-8 d-flex justify-content-between align-items-center">
                                                     <span style="font-size: 30px;">Herbs</span>
-                                                    <button type="button" class="btn btn-md btn-primary p-3" onclick="location.href='/product/herbs';">
+                                                    <button type="button" class="btn btn-md btn-primary p-3" onclick="location.href='{{ url('/') }}/product/herbs';">
                                                         <i class="fas fa-arrow-right"></i>
                                                     </button>
                                                 </div>
@@ -90,7 +90,7 @@
                                                 </div>
                                                 <div class="col-lg-8 d-flex justify-content-between align-items-center">
                                                     <span style="font-size: 30px;">Fruits</span>
-                                                    <button type="button" class="btn btn-md btn-primary p-3" onclick="location.href='/product/fruits'">
+                                                    <button type="button" class="btn btn-md btn-primary p-3" onclick="location.href='{{ url('/') }}/product/fruits'">
                                                         <i class="fas fa-arrow-right"></i>
                                                     </button>
                                                 </div>
@@ -109,7 +109,7 @@
                                                 </div>
                                                 <div class="col-lg-8 d-flex justify-content-between align-items-center">
                                                     <span style="font-size: 30px;">Meats</span>
-                                                    <button type="button" class="btn btn-md btn-primary p-3" onclick="location.href='/product/meats'">
+                                                    <button type="button" class="btn btn-md btn-primary p-3" onclick="location.href='{{ url('/') }}/product/meats'">
                                                         <i class="fas fa-arrow-right"></i>
                                                     </button>
                                                 </div>
@@ -126,7 +126,7 @@
                                                 </div>
                                                 <div class="col-lg-8 d-flex justify-content-between align-items-center">
                                                     <span style="font-size: 30px;">Fish</span>
-                                                    <button type="button" class="btn btn-md btn-primary p-3" onclick="location.href='/product/fish';">
+                                                    <button type="button" class="btn btn-md btn-primary p-3" onclick="location.href='{{ url('/') }}/product/fish';">
                                                         <i class="fas fa-arrow-right"></i>
                                                     </button>
                                                 </div>
@@ -145,7 +145,7 @@
                                                 </div>
                                                 <div class="col-lg-8 d-flex justify-content-between align-items-center">
                                                     <span style="font-size: 30px;">Others</span>
-                                                    <button type="button" class="btn btn-md btn-primary p-3" onclick="location.href='/product/others';">
+                                                    <button type="button" class="btn btn-md btn-primary p-3" onclick="location.href='{{ url('/') }}/product/others';">
                                                         <i class='fas fa-arrow-right'></i>
                                                     </button>
                                                 </div>
