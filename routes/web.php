@@ -27,6 +27,7 @@ Route::get('/about', 'Guest\GuestController@about')->name('about');
 Route::get('/vision-mission', 'Guest\GuestController@vissionMission')->name('vissionmission');
 Route::get('/company', 'Guest\GuestController@company')->name('company');
 Route::get('/maps', 'Guest\GuestController@maps')->name('maps');
+Route::get('/director', function() { return view('guest.director'); } );
 Route::get('/product', 'Guest\GuestController@product')->name('product');
 Route::get('/product/coffee', 'Guest\ProductController@coffee')->name('coffee');
 Route::get('/product/rice', 'Guest\ProductController@rice')->name('rice');

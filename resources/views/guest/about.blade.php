@@ -29,25 +29,24 @@
                       <span style="font-size: 40px; font-weight: 600">About Pardasyi</span>
                     </div>
                   </div>
-                  <div class="row d-flex justify-content-end mt-4">
-                    <div class="col-lg-12">
-                      <span>
-                        is a Company engaged in the wholesale trade and transportation of goods of various types, to various destinations both local and international.
-                        we are engaged in Export, Import and Trading. Established since September 26, 2019, we serve major international trade, either by land, sea or air.
-                      </span>
-                    </div>
-                  </div>
                   <div class="row mt-4">
                     <div class="col-lg-12">
                       <span>
-                        The establishment of PT Assyifa with eternal blessings was carried out with full dedication, a strong desire to move forward, and a high spirit to become a company that can meet customer needs and satisfaction.
+                        Our company is ready to serve wholesale and retail trade both domestically and internationally (exports and imports).
                       </span>
                     </div>
                   </div>
-                  <div class="row d-flex justify-content-end mt-4">
+                  <div class="row mt-3">
                     <div class="col-lg-12">
                       <span>
-                        the Procession of the establishment of PT assyifa eternal blessings begins with the times and Renewal. PT Assyifa blessing eternal is a company that specializes in the wholesale trade of agricultural and animal products, fruits, forestry products, sports equipment, office stationery, steel, machinery, heavy equipment, and others with a custom clearance system.
+                        In addition to serving wholesale and retail trade, our company also provides goods transportation services both domestically and internationally.
+                      </span>
+                    </div>
+                  </div>
+                  <div class="row mt-3">
+                    <div class="col-lg-12">
+                      <span>
+                        Although the age of our company is relatively young compared to other similar companies. But we have the principle of serving professionally and quickly.
                       </span>
                     </div>
                   </div>

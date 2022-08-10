@@ -32,39 +32,81 @@
   </div>
 
 <!--Main Navigation-->
-<div class="row">
-  <div class="col-lg-12">
-    <nav class="navbar navbar-expand-lg navbar-dark z-depth-0 fixed-top pt-4 pb-4">
-      <div class="collapse navbar-collapse" id="basicExampleNav">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="/">
-              <i class="fas fa-home"></i>
-              Home
-            </a>
-          </li>
-          <li class="nav-item ml-4">
-            <a class="nav-link" href="{{ url('/') }}/about">
-              <i class="fas fa-building"></i>
-              About
-            </a>
-          </li>
-          <li class="nav-item ml-4">
-            <a class="nav-link" href="{{ url('/') }}/product">
-              <i class="fas fa-shopping-basket"></i>
-              Product
-            </a>
-          </li>
-          <li class="nav-item ml-4">
-            <a class="nav-link" href="#">
-              <i class="fas fa-user"></i>
-              Directors
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+<div class="d-none d-lg-block">
+  <div class="row">
+    <div class="col-lg-12">
+      <nav class="navbar navbar-expand-lg navbar-dark z-depth-0 fixed-top pt-4 pb-4">
+        <div class="collapse navbar-collapse d-flex justify-content-between" id="basicExampleNav">
+          <div class="container">
+            <img src="{{ asset('image/pardasyi.jpeg') }}" style="width: 50px; height: 50px;">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="/">
+                  Home
+                </a>
+              </li>
+              <li class="nav-item ml-4">
+                <a class="nav-link" href="{{ url('/') }}/about">
+                  About
+                </a>
+              </li>
+              <li class="nav-item ml-4">
+                <a class="nav-link" href="{{ url('/') }}/product">
+                  Product
+                </a>
+              </li>
+              <li class="nav-item ml-4">
+                <a class="nav-link" href="/director">
+                  Directors
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
   </div>
+</div>
+<div class="d-block d-lg-none">
+  <nav class="navbar navbar-expand-lg navbar-dark primary-color">
+
+    <!-- Navbar brand -->
+    <a class="navbar-brand" href="#">
+      <img src="{{ asset('image/pardasyi.jpeg') }}" style="width: 50px; height: 50px;">
+    </a>
+  
+    <!-- Collapse button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+      aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="basicExampleNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">
+            Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url('/') }}/about">
+            About
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url('/') }}/product">
+            Product
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/director">
+            Directors
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 </div>
 <div class="row">
   <div class="col-lg-12">
@@ -126,7 +168,7 @@
       <div class="col-lg-3">
         <div class="row">
           <div class="col-lg-12 d-flex justify-content-center">
-            <img src="{{ asset('image/asyifa.png') }}" style="width:50px;">
+            <img src="{{ asset('image/pardasyi.jpeg') }}" style="width:70px;">
           </div>
         </div>
         <div class="row mt-4">
@@ -169,7 +211,7 @@
         </div>
         <div class="row">
           <div class="col-lg-12">
-            <small>+62 - 812 9292 4142 (WA)</small>
+            <small>+62 - 821 2436 - 7367 (WA)</small>
           </div>
         </div>
         <div class="row">

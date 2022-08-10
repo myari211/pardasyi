@@ -14,42 +14,63 @@
         url({{ asset('asset/1.png') }});
   }
 
+  #header_mobile {
+    width: 100%;
+    height: 100vh;
+    background-size:cover;
+    background-attachment: fixed;
+    color: white;
+    background-image:
+    linear-gradient(55.8deg, rgba(0, 0, 0, 0.75) 99.53%, rgba(0, 0, 0, 1) 100%),
+    url({{ asset('asset/1.png') }});
+  }
+
 </style>
-<div id="header_banner" class='d-flex align-items-center justify-content-center'>
-  <div>
-    <div class="row">
-      <div class="col-lg-12 d-flex justify-content-center">
-        <span style="font-weight: 500; font-size: 40px;">PT Pardasyi Cahaya Abadi</span>
+<div class="d-none d-lg-block">
+  <div id="header_banner" class='d-flex align-items-center justify-content-center'>
+    <div>
+      <div class="row">
+        <div class="col-12 d-flex justify-content-center">
+          <span style="font-weight: 500; font-size: 40px;">PT Pardasyi Cahaya Abadi</span>
+        </div>
+      </div>
+      <div class="row mt-2">
+        <div class="col-12 d-flex justify-content-center">
+          <span style='font-size: 20px; font-weight: 500'>Export, Import, and Trading</span>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-12 d-flex justify-content-center">
+          <button type="button" class="btn btn-md rounded btn-primary text-capitalize z-depth-0" style="font-weight: 500; font-size: 14px;" onclick="location.href='/about';">
+            Look Around
+            <i class="fas fa-arrow-right animated fadeInLeft infinite slow ml-3"></i>
+          </button>
+        </div>
       </div>
     </div>
-    <div class="row mt-2">
-      <div class="col-lg-12 d-flex justify-content-center">
-        <span style='font-size: 20px; font-weight: 500'>Export, Import, and Trading</span>
+  </div>
+</div>
+<div class="d-block d-lg-none">
+  <div id="header_mobile" class="d-flex align-items-center justify-content-center">
+    <div>
+      <div class="row">
+        <div class="col-12 d-flex justify-content-center justify-content-center">
+          <span style="font-weight: 500; font-size: 40px;" class="text-center">PT Pardasyi Cahaya Abadi</span>
+        </div>
       </div>
-    </div>
-    <div class="row mt-3">
-      <div class="col-lg-12 d-flex justify-content-center">
-        <button type="button" class="btn btn-md rounded btn-primary text-capitalize z-depth-0" style="font-weight: 500; font-size: 14px;">
-          Look Around
-          <i class="fas fa-arrow-right animated fadeInLeft infinite slow ml-3"></i>
-        </button>
+      <div class="row mt-2">
+        <div class="col-12 d-flex justify-content-center">
+          <span style="font-size: 20px; font-weight: 500">Export, Import, and Trading</span>
+        </div>
       </div>
-    </div>
-    {{-- <div class="row mt-3">
-      <div class="col-lg-12 d-flex justify-content-center">
-        <span style="font-weight: 500">
-          <i class="fas fa-phone"></i>
-          (021) - 210-170-72
-        </span>
-        <span class="ml-2">
-          |
-        </span>
-        <span class="ml-2" style="font-weight: 500">
-          <i class="fas fa-envelope"></i>
-          pardasyicahayaabadi@gmail.com
-        </span> --}}
-        {{-- <span style="font-weight: 500">Perum PFN, JL. Otto Iskandardinata Raya Kav. 125 - 127 R-19, Bidara Cina, Jatinegara, Jakarta Timur 13330</span> --}}
-      {{-- </div> --}}
+      <div class="row mt-3">
+        <div class="col-12 d-flex justify-content-center">
+          <button type="button" class="btn btn-md rounded btn-primary text-capitalize z-depth-0" style="font-weight: 500; font-size: 14px;">
+            Look Around
+            <i class="fas fa-arrow-right animated fadeInLeft infinite slow ml-3"></i>
+          </button>
+        </div>
+      </div>
     </div>
   </div>
 </div>
