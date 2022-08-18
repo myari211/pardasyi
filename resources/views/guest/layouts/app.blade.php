@@ -221,7 +221,7 @@
         </div>
         <div class="row">
           <div class="col-lg-12">
-            <small>assyifaberkahabadi@gmail.com</small>
+            <small>pardasyicahayaabadi@gmail.com</small>
           </div>
         </div>
       </div>
