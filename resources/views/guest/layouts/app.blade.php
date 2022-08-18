@@ -100,7 +100,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/director">
+          <a class="nav-link" href="{{ url('/') }}/director">
             Directors
           </a>
         </li>
