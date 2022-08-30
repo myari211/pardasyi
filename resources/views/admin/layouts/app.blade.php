@@ -53,7 +53,7 @@
           <div class="row">
             <div class="col-lg-12">
               <img src="{{ asset('image/asyifa.png') }}" width="70">
-              <span class="ml-2 weight">PT Assyifa Berkah Abadi</span>
+              <span class="ml-2 weight">PT Pardasyi Cahaya Abadi</span>
             </div>
           </div>
           <div class="row">
