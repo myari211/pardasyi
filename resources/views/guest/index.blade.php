@@ -41,7 +41,7 @@
       </div>
       <div class="row mt-3">
         <div class="col-12 d-flex justify-content-center">
-          <button type="button" class="btn btn-md rounded btn-primary text-capitalize z-depth-0" style="font-weight: 500; font-size: 14px;" onclick="location.href='/about';">
+          <button type="button" class="btn btn-md rounded btn-primary text-capitalize z-depth-0" style="font-weight: 500; font-size: 14px;" onclick="location.href='{{ url('/') }}/about';">
             Look Around
             <i class="fas fa-arrow-right animated fadeInLeft infinite slow ml-3"></i>
           </button>

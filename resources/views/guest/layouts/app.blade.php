@@ -35,27 +35,27 @@
 <div class="d-none d-lg-block">
   <div class="row">
     <div class="col-lg-12">
-      <nav class="navbar navbar-expand-lg navbar-dark z-depth-0 fixed-top pt-4 pb-4">
+      <nav class="navbar navbar-expand-lg navbar-dark z-depth-0 fixed-top pt-4 pb-4" id="header_nav">
         <div class="collapse navbar-collapse d-flex justify-content-between" id="basicExampleNav">
           <div class="container">
             <img src="{{ asset('image/pardasyi.jpeg') }}" style="width: 50px; height: 50px;">
             <ul class="navbar-nav">
-              <li class="nav-item active">
+              <li class="nav-item" id="home">
                 <a class="nav-link" href="/">
                   Home
                 </a>
               </li>
-              <li class="nav-item ml-4">
+              <li class="nav-item ml-4" id="about">
                 <a class="nav-link" href="{{ url('/') }}/about">
                   About
                 </a>
               </li>
-              <li class="nav-item ml-4">
+              <li class="nav-item ml-4" id="product">
                 <a class="nav-link" href="{{ url('/') }}/product">
                   Product
                 </a>
               </li>
-              <li class="nav-item ml-4">
+              <li class="nav-item ml-4" id="director">
                 <a class="nav-link" href="/director">
                   Directors
                 </a>
@@ -281,7 +281,28 @@
 <script>
 $(document).ready(function(){
   $(".preloader").fadeOut();
+
+  var url = window.location;
+  $('ul.nav.a[href="'+ url +'"]').parent().addClass('active');
+  $('ul.nav a').filter(function() {
+    return this.href == url;
+  }).parent().addClass('active');
 });
+
+
+$(window).on('scroll', function() {
+  if($(window).scrollTop() > 100) {
+    $('#header_nav').addClass('bg-primary');
+    $('#header_nav').animate({duration:500});
+    $('#header_nav').addClass('pr-4 pl-4 pt-2 pb-2');
+  }
+  else
+  {
+    $('#header_nav').removeClass('bg-primary');
+    $('#header_nav').removeClass('pr-4 pl-4 pt-2 pb-2');
+  }
+});
+
 </script>
 
 

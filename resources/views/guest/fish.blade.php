@@ -31,14 +31,8 @@
                             </div>
                         </div>
                         <div class="row mt-4">
-                            <div class="col-lg-12 d-flex justify-content-between align-items-end">
-                                <div>
-                                    <small class="text-muted">Price</small><br />
-                                    <span class="text-green" style="font-weight:400; font-size:25px;">$ {{ $data->price }}</span>
-                                </div>
-                                <div>
-                                    <button type="button" class="btn btn-md green-bg text-white rounded-0" data-toggle="modal" data-target="#fruits{{ $data->id }}">Buy</button>
-                                </div>
+                            <div class="col-lg-12">
+                                <button type="button" class="btn btn-md btn-primary btn-block text-white rounded-0" data-toggle="modal" data-target="#fruits{{ $data->id }}">Buy</button>
                             </div>
                         </div>
                     </div>

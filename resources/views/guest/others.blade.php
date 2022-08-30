@@ -26,6 +26,11 @@
                                 <button type="button" class="btn btn-md green-bg text-white rounded" data-toggle="modal" data-target="#others{{ $data->id }}">More</button>
                             </div>
                         </div>
+                        <div class="row mt-4">
+                            <div class="col-lg-12">
+                                <button type="button" class="btn btn-md btn-primary btn-block text-white rounded-0" data-toggle="modal" data-target="#others{{ $data->id }}">Buy</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
