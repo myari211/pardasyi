@@ -26,7 +26,7 @@
   <div class="preloader">
     <div class="loading">
       <div class="animated bounce infinite">
-        <img src="{{ asset('image/asyifa.png') }}" width="70">
+        <img src="{{ asset('image/pardasyi.png') }}" width="70">
       </div>
     </div>
   </div>
@@ -38,7 +38,7 @@
       <nav class="navbar navbar-expand-lg navbar-dark z-depth-0 fixed-top pt-4 pb-4" id="header_nav">
         <div class="collapse navbar-collapse d-flex justify-content-between" id="basicExampleNav">
           <div class="container">
-            <img src="{{ asset('image/pardasyi.jpeg') }}" style="width: 50px; height: 50px;">
+            <img src="{{ asset('image/pardasyi.png') }}" style="width: 50px; height: 50px;">
             <ul class="navbar-nav">
               <li class="nav-item" id="home">
                 <a class="nav-link" href="/">
@@ -72,7 +72,7 @@
 
     <!-- Navbar brand -->
     <a class="navbar-brand" href="#">
-      <img src="{{ asset('image/pardasyi.jpeg') }}" style="width: 50px; height: 50px;">
+      <img src="{{ asset('image/pardasyi.png') }}" style="width: 50px; height: 50px;">
     </a>
   
     <!-- Collapse button -->
@@ -168,7 +168,7 @@
       <div class="col-lg-3">
         <div class="row">
           <div class="col-lg-12 d-flex justify-content-center">
-            <img src="{{ asset('image/pardasyi.jpeg') }}" style="width:70px;">
+            <img src="{{ asset('image/pardasyi.png') }}" style="width:70px;">
           </div>
         </div>
         <div class="row mt-4">
