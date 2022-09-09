@@ -38,7 +38,11 @@
       <nav class="navbar navbar-expand-lg navbar-dark z-depth-0 fixed-top pt-4 pb-4" id="header_nav">
         <div class="collapse navbar-collapse d-flex justify-content-between" id="basicExampleNav">
           <div class="container">
-            <img src="{{ asset('image/pardasyi.png') }}" style="width: 50px; height: 50px;">
+            <div class="card z-depth-0 rounded-circle">
+              <div class="card-body p-0">
+                <img src="{{ asset('image/pardasyi.png') }}" style="width: 50px; height: 50px;">
+              </div>
+            </div>
             <ul class="navbar-nav">
               <li class="nav-item" id="home">
                 <a class="nav-link" href="/">
@@ -57,7 +61,7 @@
               </li>
               <li class="nav-item ml-4" id="director">
                 <a class="nav-link" href="{{ url('/') }}/director">
-                  Directors
+                  Company
                 </a>
               </li>
             </ul>
@@ -72,7 +76,11 @@
 
     <!-- Navbar brand -->
     <a class="navbar-brand" href="#">
-      <img src="{{ asset('image/pardasyi.png') }}" style="width: 50px; height: 50px;">
+      <div class="card p-0 z-depth-0 rounded-circle">
+        <div class="card-body p-0">
+          <img src="{{ asset('image/pardasyi.png') }}" style="width: 50px; height: 50px;">
+        </div>
+      </div>
     </a>
   
     <!-- Collapse button -->
@@ -101,7 +109,7 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="{{ url('/') }}/director">
-            Directors
+            Company
           </a>
         </li>
       </ul>
@@ -168,7 +176,11 @@
       <div class="col-lg-3">
         <div class="row">
           <div class="col-lg-12 d-flex justify-content-center">
-            <img src="{{ asset('image/pardasyi.png') }}" style="width:70px;">
+            <div class="card z-depth-0 rounded-circle">
+              <div class="card-body p-0">
+                <img src="{{ asset('image/pardasyi.png') }}" style="width: 60px; height: 60px;">
+              </div>
+            </div>
           </div>
         </div>
         <div class="row mt-4">
