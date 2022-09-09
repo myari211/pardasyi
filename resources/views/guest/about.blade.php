@@ -67,7 +67,7 @@
                       </div>
                       <div class="row mt-4">
                         <div class="col-lg-12">
-                          <span>Making PT. Assyifa Berkah Abadi is a company that focuses on the field of Export - Import which is trusted, most advanced, productive, competitive, and ready to compete in the international arena</span>
+                          <span>Making PT. Pardasyi Cahaya Abadi is a company that focuses on the field of Export - Import which is trusted, most advanced, productive, competitive, and ready to compete in the international arena</span>
                         </div>
                       </div>
                     </div>

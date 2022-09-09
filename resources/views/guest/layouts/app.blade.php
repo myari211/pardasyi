@@ -84,7 +84,7 @@
     <!-- Collapsible content -->
     <div class="collapse navbar-collapse" id="basicExampleNav">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="/">
             Home
           </a>
@@ -211,7 +211,12 @@
         </div>
         <div class="row">
           <div class="col-lg-12">
-            <small>+62 - 821 2436 - 7367 (WA)</small>
+            <small>+62 - 812 1000 1197</small>
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col-12">
+            <small>+62 857 8033 9671</small>
           </div>
         </div>
         <div class="row">
@@ -221,7 +226,7 @@
         </div>
         <div class="row">
           <div class="col-lg-12">
-            <small>pardasyicahayaabadi@gmail.com</small>
+            <small>pardasyi12@gmail.com</small>
           </div>
         </div>
       </div>
@@ -247,7 +252,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-3">
+      {{-- <div class="col-lg-3">
         <div class="row">
           <div class="col-lg-12">
             <small>Subscribe Now</small>
@@ -272,7 +277,7 @@
             </button>
           </div>
         </div>
-      </div>
+      </div> --}}
     </div>
   </div>
 </footer>

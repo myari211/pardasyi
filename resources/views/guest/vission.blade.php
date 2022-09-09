@@ -12,7 +12,7 @@
               <div class="card">
                 <div class="card-body"> 
                   <small class="animated flipInX delay-2s text-green">Vission</small>
-                  <h5 class="animated flipInX delay-2s">Making PT. Assyifa Berkah Abadi is a company that focuses on the field of Export - Import which is trusted, most advanced, productive, competitive, and ready to compete in the international arena</h5>
+                  <h5 class="animated flipInX delay-2s">Making PT. Pardasyi Cahaya Abadi is a company that focuses on the field of Export - Import which is trusted, most advanced, productive, competitive, and ready to compete in the international arena</h5>
                 </div>
               </div>
             </div>
