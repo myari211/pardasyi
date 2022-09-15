@@ -25,7 +25,8 @@
                                 <div class="card-body">
                                     <div class="row">
                                         <div class="col-lg-12">
-                                            <img src="{{ asset('image/coconut/coconut2.png') }}" style="width:100%; height:200px;">
+                                            <img src="{{ asset('image/coconut/coconut2.png') }}" style="width:100%; height:200px;" class="d-none d-lg-block">
+                                            <img src="{{ asset('image/coconut/coconut2.png') }}" style="width:150px;height:150px;" class="rounded-circle d-block d-lg-none">
                                         </div>
                                     </div>
                                     <div class="row mt-4">
