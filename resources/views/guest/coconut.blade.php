@@ -76,7 +76,7 @@
                         <div class="row">
                             <div class="col-lg-12 h-100 d-flex justify-content-center" style="padding-top: 100px;">
                                 <img src="{{ asset('image/coconut/coconut1.png') }}" style="width: 400px; height: 400px;" class="position-fixed d-none d-lg-block">
-                                <img src="{{ asset('image/coconut/coconut1.png') }}" style="width: 400px; height: 400px;" class="d-block d-lg-none rounded-circle">
+                                <img src="{{ asset('image/coconut/coconut1.png') }}" style="width: 200px; height: 200px;" class="d-block d-lg-none rounded-circle">
                             </div>
                         </div>
                     </div>
