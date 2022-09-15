@@ -333,6 +333,25 @@
                             </div>
                         </div>
                         <div class="row mt-4">
+                            <div class="col-12">
+                                <div class="card z-depth-0">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-lg-4">
+                                                <img src="{{ asset('image/Others/1.jpg') }}" style="width:100px; height:100px;" class="rounded-circle">
+                                            </div>
+                                            <div class="col-lg-8 d-flex justify-content-between align-items-center">
+                                                <span style="font-size: 30px;">Others</span>
+                                                <button type="button" class="btn btn-md btn-primary p-3" onclick="location.href='{{ url('/') }}/product/others';">
+                                                    <i class='fas fa-arrow-right'></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
                             <div class="col-lg-12">
                                 <div class="card z-depth-0">
                                     <div class="card-body">
