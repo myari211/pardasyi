@@ -24,7 +24,7 @@
                             <div class="card rounded-0 h-100">
                                 <div class="card-body">
                                     <div class="row">
-                                        <div class="col-lg-12">
+                                        <div class="col-lg-12 d-flex justify-content-center">
                                             <img src="{{ asset('image/coconut/coconut2.png') }}" style="width:100%; height:200px;" class="d-none d-lg-block">
                                             <img src="{{ asset('image/coconut/coconut2.png') }}" style="width:150px;height:150px;" class="rounded-circle d-block d-lg-none">
                                         </div>
@@ -75,7 +75,8 @@
                     <div class="col-lg-8">
                         <div class="row">
                             <div class="col-lg-12 h-100 d-flex justify-content-center" style="padding-top: 100px;">
-                                <img src="{{ asset('image/coconut/coconut1.png') }}" style="width: 400px; height: 400px;" class="position-fixed">
+                                <img src="{{ asset('image/coconut/coconut1.png') }}" style="width: 400px; height: 400px;" class="position-fixed d-none d-lg-block">
+                                <img src="{{ asset('image/coconut/coconut1.png') }}" style="width: 400px; height: 400px;" class="d-block d-lg-none rounded-circle">
                             </div>
                         </div>
                     </div>
