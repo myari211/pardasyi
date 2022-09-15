@@ -57,4 +57,8 @@ class ProductController extends Controller
 
         return view('guest.others', compact('others'));
     }
+
+    public function coconut() {
+        return view('guest.coconut');
+    }
 }
